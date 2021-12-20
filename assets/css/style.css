@@ -1,0 +1,374 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    border:none;
+}
+body{
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+section#hero{
+    box-sizing: border-box;
+    height: 700px;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 56px;
+    padding-right: 56px;
+    position: relative;
+}
+section#hero .background_image img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+}
+section#hero .shade{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,.4);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+
+}
+#header{
+    position: relative;
+    height: 48px;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .header_left{
+    height:100%;
+    width:200px;
+}
+#header .header_left .header_logo{
+    position:relative;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+#header .header_left .header_logo svg{
+    width:67%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+}
+#header .header_right{
+    height:100%;
+    width:500px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='35' viewBox='0 0 22 24' width='25' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.7);
+    background-position-x: 95%;
+    background-position-y: 0px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin-right: 2rem;
+    padding: 7px 25px;
+    padding-right: 25px;
+    font-size: 14px;
+    color: white;
+}
+.signin_box{
+    background-color:#E50914;
+    height:35px;
+    padding:7px 15px;
+    border-radius:3px;
+}
+.signin_box a{
+    text-decoration:none;
+    text-align: center;
+    color:white;
+}
+section#hero center{
+    color:white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 150px;
+}
+
+section#hero center .hero_main{
+    width:700px;
+    font-family: 'Nunito';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section#hero center .hero_main .title{
+    font-size: 50px;
+    width: 520px;
+    font-weight: 700;
+    word-break: break-word;
+    line-height: 60px;
+}
+section#hero center .hero_main .subtitle{
+    font-size: 26px;
+    font-weight: 400;
+}
+section#hero center .hero_main .email_form_title{
+    font-size:19px;
+    font-weight: 400;
+}
+section#hero center .hero_main .email_input{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+section#hero center .hero_main .email_input input{
+    height:60px;
+    width:450px;
+    padding:0px 10px;
+    border-radius:2px;
+    background:white;
+}
+section#hero center .hero_main .email_input input:focus{
+    border:none;
+    outline:none;
+}
+section#hero center .hero_main .email_input #getStarted_btn{
+    height: 60px;
+    width: 210px;
+    background: #F40612;
+    color: white;
+    font-size: 26px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#hero center .hero_main .email_input #getStarted_btn span:nth-child(1){
+    margin-right:3px;
+    font-weight: 400;
+}
+section#hero center .hero_main .email_input #getStarted_btn span:nth-child(2){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#border_bottom{
+    position:relative;
+    height:10px;
+    background-color:#222222;
+    width:100%;
+}
+section#hero1{
+    height:463px;
+    background-color:#000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding:30px 100px;
+}
+section#hero1 .left{
+    width:50%;
+}
+section#hero1 .left .hero1_title{
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size:50px;
+    color:#fff;
+}
+section#hero1 .left .hero1_title p{
+    margin-bottom:5px;
+}
+section#hero1 .left .hero1_subtitle{
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size:26px;
+    color:#fff;
+}
+section#hero1 .left .hero1_subtitle p{
+    line-height: 35px;
+}
+section#hero1 .right{
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+section#hero1 .right .tv_image{
+    width:90%;
+    height:100%;
+    position:relative;
+    overflow: hidden;
+}
+section#hero1 .right .tv_image img{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+    z-index:1;
+}
+section#hero1 .right .tv_image video{
+    position: absolute;
+    top: calc(21% - 2px);
+    left: calc(12% - 2px);
+}
+section#hero2{
+    height:463px;
+    background-color:#000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding:30px 100px;
+}
+section#hero2 .right{
+    width:50%;
+}
+section#hero2 .right .hero2_title{
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size:50px;
+    color:#fff;
+}
+section#hero2 .right .hero2_title p{
+    margin-bottom: 15px;
+    line-height: 55px;
+}
+section#hero2 .right .hero2_subtitle{
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size:26px;
+    color:#fff;
+}
+section#hero2 .right .hero2_subtitle p{
+    line-height: 35px;
+}
+section#hero2 .left{
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+section#hero2 .left .left_animation_box{
+    position:relative;
+    overflow:hidden;
+    width:100%;
+    height:100%;
+}
+section#hero2 .left .left_animation_box img{
+    width: 87%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -60px;
+    object-fit: contain;
+}
+section#hero2 .left .left_animation_box .downloading_box{
+    z-index: 1;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+    width: 330px;
+    background-color: #000;
+    padding: 8px 12px;
+    color: white;
+    font-size: 16px;
+    border: 2px solid #404040;
+    border-radius: 12px;
+    position: absolute;
+    top: 270px;
+    left: 18px;
+}
+section#hero2 .left .left_animation_box .downloading_box .left{
+    width:20%;
+    height:100%;
+    position:relative;
+    overflow:hidden;
+    margin-right:10px;
+}
+section#hero2 .left .left_animation_box .downloading_box .left img{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    object-fit: contain;
+
+}
+section#hero2 .left .left_animation_box .downloading_box .middle{
+    width: 57%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+section#hero2 .left .left_animation_box .downloading_box .middle p{
+    margin-bottom:0px;
+    font-size:16px;
+    font-weight:600;
+}
+section#hero2 .left .left_animation_box .downloading_box .middle span{
+    font-size:14px;
+    font-weight:400;
+    margin-top:-5px;
+    color:#0071eb;
+}
+section#hero2 .left .left_animation_box .downloading_box .right{
+    width:20%;
+    height:100%;
+    position:relative;
+    overflow:hidden;
+}
+section#hero2 .left .left_animation_box .downloading_box .right img{
+    width: 50px;
+    height: 48px;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    object-fit: contain;
+}
+section#hero1 .right .tv_image video.hero3_video{
+    position: absolute;
+    top: calc(9% - 2px);
+    left: calc(17%);
+}
+section.hero4 .left{
+    width:50%;
+    height:100%;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.hero4 .left img{
+    width:90%;
+    height:90%;
+    position:absolute;
+    top:30px;
+    left:0;
+    object-fit: contain;
+}
