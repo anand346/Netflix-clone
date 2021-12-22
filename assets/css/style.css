@@ -126,28 +126,29 @@ section#hero center .hero_main .subtitle{
     font-size: 26px;
     font-weight: 400;
 }
-section#hero center .hero_main .email_form_title{
+.email_form_title{
     font-size:19px;
     font-weight: 400;
+    color:white;
 }
-section#hero center .hero_main .email_input{
+.email_input{
     display:flex;
     width:100%;
     justify-content: center;
     align-items: center;
 }
-section#hero center .hero_main .email_input input{
+.email_input input{
     height:60px;
     width:450px;
     padding:0px 10px;
     border-radius:2px;
     background:white;
 }
-section#hero center .hero_main .email_input input:focus{
+.email_input input:focus{
     border:none;
     outline:none;
 }
-section#hero center .hero_main .email_input #getStarted_btn{
+.email_input #getStarted_btn{
     height: 60px;
     width: 210px;
     background: #F40612;
@@ -158,11 +159,11 @@ section#hero center .hero_main .email_input #getStarted_btn{
     justify-content: center;
     align-items: center;
 }
-section#hero center .hero_main .email_input #getStarted_btn span:nth-child(1){
+.email_input #getStarted_btn span:nth-child(1){
     margin-right:3px;
     font-weight: 400;
 }
-section#hero center .hero_main .email_input #getStarted_btn span:nth-child(2){
+.email_input #getStarted_btn span:nth-child(2){
     display:flex;
     justify-content: center;
     align-items: center;
@@ -371,4 +372,140 @@ section.hero4 .left img{
     top:30px;
     left:0;
     object-fit: contain;
+}
+section#faq{
+    width:100%;
+    /* height:900px; */
+    background-color:#000;
+    padding:75px 45px;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+}
+section#faq .head{
+    margin-bottom:20px;
+}
+section#faq .head p{
+    color:#fff;
+    font-weight:700;
+    font-size:50px;
+}
+section#faq .body{
+    width:815px;
+}
+section#faq .body .accordion{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+section#faq .body #accordion .card{
+    width:100%;
+    margin-bottom:10px;
+    justify-content: center;
+    align-items: flex-start;
+    background-color:#303030;
+}
+section#faq .body #accordion .card .card-header{
+    width:100%;
+    height:72px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#303030;
+}
+section#faq .body #accordion .card .card-header button{
+    font-size:24px;
+    font-weight:400;
+    text-decoration: none;   
+    color:#fff;
+}
+section#faq .body #accordion .card .card-header .cross_logo{
+    width: 4%;
+    height: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+section#faq .body #accordion .card .card-body span{
+    font-size:24px;
+    color:#fff;
+    font-weight:400;
+}
+section#faq .foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+}
+section#footer{
+    width:100%;
+    /* height:900px; */
+    background-color:#000;
+    padding:75px 45px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+section#footer .footer_container{
+    width:70%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:flex-start;
+}
+section#footer .footer_container .footer_head{
+    width:100%;
+    padding:10px 0px;
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    margin-bottom:15px;
+}
+section#footer .footer_container .footer_head p{
+    margin-bottom:0;
+    font-size:16px;
+    font-weight:400;
+    color:#757575;
+}
+section#footer .footer_container .footer_body{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom:15px;
+}
+section#footer .footer_container .footer_body ul li{
+    list-style: none;
+    margin-bottom:15px;
+    font-size:13px;
+    font-weight:400;
+    color:#757575;
+}
+section#footer .footer_container .footer_foot{
+    width:100px;
+}
+section#footer .footer_container .footer_foot .choose_language{
+    width:100%;
+    position:relative;
+}
+section#footer .footer_container .footer_foot select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23757575' height='35' viewBox='0 0 22 24' width='25' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.7);
+    background-position-x: 95%;
+    background-position-y: 9px;
+    border: 1px solid #757575;
+    border-radius: 2px;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
 }
