@@ -363,13 +363,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function(){
+            $(".cross_logo").css("transform","rotate(45deg)");
+            $(".card-header:first").find(".cross_logo").css("transform","");
             var card_header = $(".card .card-header");
             card_header.on("click",function(){
                 var show_class = $(this).siblings(".collapse").hasClass("show");
                 if(show_class){
-                    $(this).find(".cross_logo").css("transform","");
-                }else{
                     $(this).find(".cross_logo").css("transform","rotate(45deg)");
+                }else{
+                    $(this).find(".cross_logo").css("transform","");
                 }
             })
         })
