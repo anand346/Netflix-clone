@@ -229,8 +229,17 @@ section#hero1 .right .tv_image img{
 }
 section#hero1 .right .tv_image video{
     position: absolute;
-    top: calc(21% - 2px);
-    left: calc(12% - 2px);
+    top: 72px;
+    left: 68px;
+    width: 459px;
+    height: 249px;
+}
+section#hero1 .right .tv_image video#video2{
+    position: absolute;
+    top: 15px;
+    left: 111px;
+    width: 363px;
+    height: 207px;
 }
 section#hero2{
     height:463px;
@@ -508,4 +517,73 @@ section#footer .footer_container .footer_foot select{
     font-size: 16px;
     font-weight: 400;
     color: #757575;
+}
+
+@media screen and (max-width:576px){
+    
+}
+@media screen and (max-width:768px){
+    .email_form_title {
+        width: 385px;
+    }
+    .email_input {
+        width: 75%;
+        flex-direction: column;
+    }
+    .email_input input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .email_input #getStarted_btn {
+        height: 40px;
+        width: 130px;
+        font-size: 16px;
+    }
+    .email_input #getStarted_btn svg{
+        width:20px;
+    }
+}
+@media screen and (max-width:992px){
+    section#hero1{
+        padding:30px 40px;
+    }
+    section#hero1 .hero1_title{
+        font-size:45px;
+    }
+    section#hero1 .right .tv_image img{
+        object-fit: contain;
+    }
+    section#hero2{
+        padding:30px 45px;
+    }
+    section#hero2 .left .left_animation_box img{
+        top:-24px;
+    }
+    section#hero2 .left .left_animation_box .downloading_box{
+        width: 265px;
+        top: 208px;
+        left: 4px;
+    }
+    section#hero1 .right .tv_image video#video2{
+        width: 258px;
+        height: 226px;
+    }
+    section#hero1 .right .tv_image video{
+        width: 306px;
+        height: 226px;
+    }
+    section#faq .head p{
+        font-size:48px;
+    }
+    section#faq .body{
+        width:660px;
+    }
+    section#footer{
+        padding:30px 45px;
+    }
+    
+    
+}
+@media screen and (max-width:1200px){
+    
 }

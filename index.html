@@ -70,7 +70,7 @@
         </center>
     </section>
     <div id="border_bottom"></div>
-    <section id="hero1">
+    <section id="hero1" class = "hero_first">
         <div class="left">
             <div class="hero1_title">
                 <p>Enjoy on your TV.</p>
@@ -131,7 +131,7 @@
         <div class="right">
             <div class="tv_image">
                 <img src="assets/img/device-pile-in.png" alt="">
-                <video width="335" height="190" autoplay loop class="hero3_video">
+                <video id = "video2" width="335" height="190" autoplay loop class="hero3_video">
                     <source src="assets/video/netflix_video_2.m4v" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -361,6 +361,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var card_header = $(".card .card-header");
+            card_header.on("click",function(){
+                var show_class = $(this).siblings(".collapse").hasClass("show");
+                if(show_class){
+                    $(this).find(".cross_logo").css("transform","");
+                }else{
+                    $(this).find(".cross_logo").css("transform","rotate(45deg)");
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>
