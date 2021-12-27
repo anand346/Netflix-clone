@@ -231,12 +231,12 @@ section#hero1 .right .tv_image img{
 }
 section#hero1 .right .tv_image video{
     position: absolute;
-    top: 62px;
+    top: 75px;
     width: 74%;
 }
 section#hero1 .right .tv_image video#video2{
     position: absolute;
-    top: 2px;
+    top: 25px;
     left: 105px;
     width: 64%;
 }
