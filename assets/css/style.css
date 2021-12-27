@@ -184,7 +184,7 @@ section#hero1{
     justify-content: center;
     align-items: center;
     width:100%;
-    padding:30px 100px;
+    padding:30px 50px;
 }
 section#hero1 .left{
     width:50%;
@@ -220,35 +220,25 @@ section#hero1 .right .tv_image{
     height:100%;
     position:relative;
     overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
 section#hero1 .right .tv_image img{
-    width:517px;
-    height:100%;
-    position:absolute;
-    top:0;
-    left:0;
+    width:100%;
     object-fit: cover;
     z-index:1;
 }
 section#hero1 .right .tv_image video{
-    /* position: absolute;
-    top: 72px;
-    left: 68px;
-    width: 459px;
-    height: 249px; */
-
     position: absolute;
-    top: 83px;
-    left: 27px;
-    width: 459px;
-    height: 221px;
+    top: 62px;
+    width: 74%;
 }
 section#hero1 .right .tv_image video#video2{
     position: absolute;
-    top: 25px;
-    left: 90px;
-    width: 335px;
-    height: 204px;
+    top: 2px;
+    left: 105px;
+    width: 64%;
 }
 section#hero2{
     height:463px;
@@ -257,7 +247,7 @@ section#hero2{
     justify-content: center;
     align-items: center;
     width:100%;
-    padding:30px 100px;
+    padding:30px 50px;
 }
 section#hero2 .right{
     width:50%;
@@ -368,11 +358,11 @@ section#hero2 .left .left_animation_box .downloading_box .right img{
     left: 8%;
     object-fit: contain;
 }
-section#hero1 .right .tv_image video.hero3_video{
+/* section#hero1 .right .tv_image video.hero3_video{
     position: absolute;
     top: calc(9% - 2px);
     left: calc(17%);
-}
+} */
 section.hero4 .left{
     width:50%;
     height:100%;
@@ -590,9 +580,7 @@ section#footer .footer_container .footer_foot select{
     section#footer{
         padding:30px 45px;
     }
-    
-    
 }
-@media screen and (max-width:1200px){
+@media screen and (max-width:1255px){
     
 }
